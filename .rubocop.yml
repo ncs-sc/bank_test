@@ -1,0 +1,10 @@
+AllCops:
+  Exclude:
+    - db/schema.rb
+  NewCops: enable
+
+# Not worried about block length for DSLs that use nested blocks
+Metrics/BlockLength:
+  Exclude:
+    - config/initializers/*.rb
+    - spec/**/*.rb
