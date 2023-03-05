@@ -1,16 +1,18 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.describe "transactions/show", type: :view do
+RSpec.describe 'transactions/show', type: :view do
   before(:each) do
     assign(:transaction, Transaction.create!(
-      description: "MyText",
-      account_id: "",
-      amount: 2,
-      settlement_id: ""
-    ))
+                           description: 'MyText',
+                           account_id: '',
+                           amount: 2,
+                           settlement_id: ''
+                         ))
   end
 
-  it "renders attributes in <p>" do
+  it 'renders attributes in <p>' do
     render
     expect(rendered).to match(/MyText/)
     expect(rendered).to match(//)

@@ -1,15 +1,17 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.describe "settlements/show", type: :view do
+RSpec.describe 'settlements/show', type: :view do
   before(:each) do
     assign(:settlement, Settlement.create!(
-      type: "MyText",
-      external_reference: "MyText",
-      external_amount: 2
-    ))
+                          type: 'MyText',
+                          external_reference: 'MyText',
+                          external_amount: 2
+                        ))
   end
 
-  it "renders attributes in <p>" do
+  it 'renders attributes in <p>' do
     render
     expect(rendered).to match(/MyText/)
     expect(rendered).to match(/MyText/)

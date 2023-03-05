@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 FactoryBot.define do
   factory :transaction do
-    description { "MyText" }
-    account_id { "" }
+    description { 'MyText' }
+    account_id { '' }
     amount { 1 }
-    settlement_id { "" }
+    settlement_id { '' }
   end
 end
