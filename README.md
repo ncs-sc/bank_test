@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is work-in-progress solution to a Silvercat coding excercise.
 
-Things you may want to cover:
+Bamboo have decided to open an online bank, Bambank, with its own currency, Bambeuros.
+The new bank will run a promotion giving all new customers 100 free Bambeuros when they
+sign up.
 
-* Ruby version
+Create a prototype web application that allows users to:
+- Create an account / log in
+- View their current balance and transactions
+- Send Bambeuros to other users
 
-* System dependencies
+## Implemented from exercise so far
 
-* Configuration
+ - Rails 7 server, with postgres database
+ - Devise for user registration and site authentication
+ - Data model to represent users, accounts and transactions
+ - Basic scaffolds as starting point for controllers and views
 
-* Database creation
+## Implemented, but not part of the exercise
 
-* Database initialization
+ - Rubocop, clean code without offences
+ - UUIDs for primary keys
 
-* How to run the test suite
+## Still to do
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ - Security for user access to controller and data model
+ - Any UI at all
+ - Business logic for sign up
+ - Automated tests
+ - Documentation and use instructions
