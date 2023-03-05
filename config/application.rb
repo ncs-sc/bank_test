@@ -9,6 +9,7 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 module BankTest
+  # Main application definition for BankTest
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
